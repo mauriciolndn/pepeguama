@@ -8,12 +8,49 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="nav" id="nav">
-      <!-- <img src="http://meganelndn.com/KEA/logo.svg" alt="logo" class="logo"> -->
-      <a href="index.html">Home</a>
-      <a href="wood.html">Wood</a>
-      <a href="glass.html">Glass</a>
-    </nav>
+    <!-- HEADER -->
+    <div id="header">
+      <img src="imgs/logo.svg" alt="logo" id="logo" />
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="wood.html">Wood</a>
+        <a href="glass.html">Glass</a>
+      </nav>
+      <div class="language">EN / FR</div>
+    </div>
+
+    <!-- GALLERY -->
+    <section id="gallery">
+      <h1 class="galleryTitle">Art in wood</h1>
+      <div class="content" id="galleryPage">
+        <template id="galleryTemplate"></template>
+
+        <nav id="categoryNav">
+          <a href="#gallery">Show All</a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div id="footer">
+        <div class="copyright">
+          All rights reserved to Mauricio Londoño &copy 2020
+        </div>
+        <div class="socialIcons">
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img
+              src="http://meganelndn.com/KEA/social_media_icons/instagram.png"
+              alt="instagram_logo"
+          /></a>
+          <a href="https://www.facebook.com/megane.londono" target="_blank"
+            ><img
+              src="http://meganelndn.com/KEA/social_media_icons/facebook.png"
+              alt="facebook_logo"
+          /></a>
+        </div>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
