@@ -1,0 +1,65 @@
+/* fonts */
+@font-face {
+  font-family: "Transat Regular";
+  src: url("fonts/transat_standard-webfont.ttf");
+}
+@font-face {
+  font-family: "Transat Bold";
+  src: url("fonts/transat_bold-webfont.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/*------- CSS variables -------*/
+:root {
+  --main-font: "Transat Regular";
+  --main-font-bold: "Transat Bold";
+  --nav-font: "Courier New", Courier, monospace;
+  --text-color: #000;
+}
+
+/*----------- HEADER ---------*/
+#header {
+  font-family: var(--nav-font);
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo nav language";
+  margin-top: 20px;
+}
+/* logo */
+.logoText {
+  grid-area: logo;
+  margin-left: 30px;
+}
+/* navigation */
+#nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: center;
+}
+#nav a {
+  grid-area: nav;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-decoration: none;
+  color: var(--text-color);
+  text-transform: uppercase;
+}
+/* language */
+.language {
+  text-align: right;
+  margin-right: 30px;
+}
+
+/* profile */
+.profileImg {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 50px;
+  width: 20%;
+}
