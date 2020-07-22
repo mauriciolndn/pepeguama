@@ -1,4 +1,5 @@
 /* fonts */
+/* @import url("https://fonts.googleapis.com/css?family=Baskerville:400,400i&display=swap"); */
 @font-face {
   font-family: "Transat Regular";
   src: url("fonts/transat_standard-webfont.ttf");
@@ -7,19 +8,20 @@
   font-family: "Transat Bold";
   src: url("fonts/transat_bold-webfont.ttf");
 }
-
 * {
   margin: 0;
 }
 
-/*------- CSS variables -------*/
+/*--------- VARIABLES --------*/
 :root {
+  --simple-font: "Baskerville", serif;
   --main-font: "Transat Regular";
   --main-font-bold: "Transat Bold";
   --nav-font: "Courier New", Courier, monospace;
   --text-color: #000;
 }
 
+/*----------------------------- INDEX -------------------------*/
 /*----------- HEADER ---------*/
 #header {
   font-family: var(--nav-font);
@@ -27,7 +29,7 @@
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "logo nav language";
-  margin-top: 20px;
+  margin-top: 35px;
 }
 /* logo */
 #logo {
@@ -43,11 +45,35 @@
 }
 #nav a {
   grid-area: nav;
-  padding-left: 100px;
-  padding-right: 100px;
+  margin: 0 100px;
   text-decoration: none;
   color: var(--text-color);
   text-transform: uppercase;
+  font-size: 14px;
+}
+#nav a.woodLink {
+  border-bottom: 2px solid olive;
+  margin-bottom: 60px;
+}
+#nav a.woodLink:hover {
+  border-bottom: transparent;
+}
+#nav a.glassLink {
+  border-bottom: 2px solid darkred;
+  margin-bottom: 60px;
+}
+#nav a.glassLink:hover {
+  border-bottom: transparent;
+}
+#nav a.homeLink {
+  border-bottom: 2px solid orange;
+  margin-bottom: 60px;
+}
+#nav a.homeLink:hover {
+  border-bottom: transparent;
+}
+#nav a:active {
+  border-bottom: none;
 }
 /* language */
 .language {
@@ -55,29 +81,196 @@
   margin-right: 30px;
 }
 
+/*----------- PROFILE SECTION ----------*/
 /* profile */
+#profile {
+  padding-bottom: 150px;
+}
 .profileImg {
   display: block;
-  margin-right: auto;
-  margin-left: auto;
-  width: 20%;
+  margin: 30px auto;
+  width: 23%;
+}
+.profileTitle {
+  text-align: center;
+  margin: 50px 0 20px 0;
+  font-size: 50px;
+  font-family: var(--simple-font);
+  font-weight: 100;
+  font-style: italic;
+}
+.description {
+  text-align: center;
+  margin: 0 300px;
+  font-size: 22px;
+  font-family: var(--simple-font);
+  line-height: 150%;
+}
+
+/*----------- WOOD SECTION ----------*/
+#wood {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "woodImg woodText";
+  font-family: var(--simple-font);
+}
+#wood img {
+  grid-area: woodImg;
+  width: 65%;
+  display: flex;
+  /* justify-content: flex-end; */
+  margin-left: 200px;
+  margin-bottom: 150px;
+}
+.woodText {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.7fr 0.3fr 1fr;
+  grid-template-areas: "woodSub" "woodDesc" "woodBtn";
+}
+#wood .woodSub {
+  grid-area: woodSub;
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+  font-style: italic;
+  font-weight: 100;
+  text-align: center;
+  font-size: 50px;
+}
+#wood .woodDesc {
+  grid-area: woodDesc;
+  text-align: center;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  font-size: 20px;
+}
+#wood #woodBtn {
+  grid-area: woodBtn;
+  background: inherit;
+  border: 1px solid;
+  padding: 15px 45px;
+  font-size: 14px;
+  font-family: var(--simple-font);
+}
+#wood .btn {
+  grid-area: woodBtn;
+  display: flex;
+  align-self: flex-start;
+  justify-content: center;
+}
+
+/*----------- GLASS SECTION ----------*/
+#glass {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "glassText glassImg";
+  font-family: var(--simple-font);
+}
+#glass img {
+  grid-area: glassImg;
+  width: 65%;
+  display: flex;
+  justify-content: left;
+}
+.glassText {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.7fr 0.3fr 1fr;
+  grid-template-areas: "glassSub" "glassDesc" "glassBtn";
+}
+#glass .glassSub {
+  grid-area: glassSub;
+  font-style: italic;
+  font-weight: 100;
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+  font-size: 50px;
+}
+#glass .glassDesc {
+  grid-area: glassDesc;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  font-size: 20px;
+}
+#glass #glassBtn {
+  grid-area: glassBtn;
+  background: inherit;
+  border: 1px solid;
+  padding: 15px 45px;
+  font-size: 14px;
+  font-family: var(--simple-font);
+}
+#glass .btn {
+  grid-area: glassBtn;
+  display: flex;
+  align-self: flex-start;
+  justify-content: center;
 }
 
 /*----------- FOOTER ---------*/
 #footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "copyright socialMedia";
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "logo socialMedia"
+    "copyright email";
   padding: 25px;
   margin-top: 50px;
-  background-color: lightsteelblue;
+  background-color: black;
+  color: white;
 }
-.socialIcons img {
-  grid-area: socialMedia;
-  width: 30px;
-  float: right;
-}
+/* copyright */
 .copyright {
   grid-area: copyright;
+  margin-top: 30px;
+  display: flex;
+  align-self: flex-end;
+}
+/* logo */
+.logo {
+  grid-area: logo;
+  width: 12%;
+}
+/* social media icons */
+.socialIcons img {
+  grid-area: socialMedia;
+  float: right;
+}
+.instagram {
+  width: 40px;
+}
+.facebook {
+  width: 30px;
+  padding-top: 4px;
+}
+/* email */
+a.email {
+  grid-area: email;
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+  color: white;
+  text-decoration: none;
+}
+a.email::before {
+  content: "✉";
+  width: 25px;
+  transform: scale(2);
+}
+/* phone */
+.phone {
+  grid-area: email;
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-start;
+}
+.phone::before {
+  content: "☏";
+  width: 25px;
+  transform: scale(1.5);
 }
