@@ -8,50 +8,297 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- HEADER -->
-    <div id="header">
-      <img src="imgs/logo.svg" alt="logo" id="logo" />
-      <nav class="nav" id="nav">
-        <a href="index.html" class="homeLink">Home</a>
-        <a href="#" class="woodLink">Wood</a>
-        <a href="glass.html" class="glassLink">Glass</a>
-      </nav>
-      <div class="language">EN / FR</div>
+    <div class="language">
+      <!-- all content to be translated later -->
+      <div class="content">
+        <!-- HEADER -->
+        <div id="header">
+          <img src="imgs/logo.svg" alt="logo" id="logo" />
+          <nav class="nav" id="nav">
+            <a href="index.html" class="homeLink">Home</a>
+            <a href="#" class="active" class="woodLink">Wood</a>
+            <a href="glass.html" class="glassLink">Glass</a>
+          </nav>
+          <!-- language selector -->
+          <div class="langWrap">
+            <a href="#" language="english" class="active">EN</a>
+            <a href="#" language="español">ES</a>
+            <a href="#" language="français">FR</a>
+          </div>
+        </div>
+
+        <!-- <section id="gallery">
+      <h1 class="galleryTitle">Wood gallery</h1>
+      <div id="galleryPage">
+        <template id="galleryTemplate">
+          <h2 class="name"></h2>
+          <p class="description"></p>
+        </template>
+        <section id="galleryList"></section>
+      </div>
+    </section> -->
+
+        <!-- GALLERY -->
+        <section id="woodGallery">
+          <h1 class="woodGalleryTitle">Wood gallery</h1>
+          <div id="woodGalleryGrid">
+            <!-- one -->
+            <div id="singleGrid1">
+              <img
+                src="http://mauriciolondono.be/wp/wp-content/uploads/2020/01/animales_1.jpeg"
+                alt="butterfly"
+                class="butterfly"
+              />
+              <h2 class="name">Butterfly</h2>
+              <p class="dimensions">30 x 45 cm</p>
+              <p class="price">45€</p>
+              <button class="buyBtn">Buy Now</button>
+            </div>
+            <!-- three -->
+            <div id="singleGrid3">
+              <img
+                src="http://mauriciolondono.be/wp/wp-content/uploads/2020/01/figura_2.jpeg"
+                alt="indian"
+                class="indian"
+              />
+              <h2 class="name">Indio</h2>
+              <p class="dimensions">30x45cm</p>
+              <p class="price">45€</p>
+              <button class="buyBtn">Buy Now</button>
+            </div>
+            <!-- two -->
+            <div id="singleGrid2">
+              <img
+                src="http://mauriciolondono.be/wp/wp-content/uploads/2020/01/fruta_18.jpeg"
+                alt="apple1"
+                class="apple1"
+              />
+              <h2 class="name">Apple</h2>
+              <p class="dimensions">30x45cm</p>
+              <p class="price">45€</p>
+              <button class="buyBtn">Buy Now</button>
+            </div>
+            <!-- four -->
+            <div id="singleGrid4">
+              <img
+                src="http://mauriciolondono.be/wp/wp-content/uploads/2020/01/fruta_12.jpeg"
+                alt="apple2"
+                class="apple2"
+              />
+              <h2 class="name">Another apple</h2>
+              <p class="dimensions">30x45cm</p>
+              <p class="price">45€</p>
+              <button class="buyBtn">Buy Now</button>
+            </div>
+            <!-- five -->
+            <div id="singleGrid5">
+              <img
+                src="http://mauriciolondono.be/wp/wp-content/uploads/2020/01/fruta_8.jpeg"
+                alt="apple3"
+                class="apple3"
+              />
+              <h2 class="name">More apples</h2>
+              <p class="dimensions">30x45cm</p>
+              <p class="price">45€</p>
+              <button class="buyBtn">Buy Now</button>
+            </div>
+            <!-- six -->
+            <div id="singleGrid6">
+              <img
+                src="http://mauriciolondono.be/wp/wp-content/uploads/2020/01/symmetry_5.jpeg"
+                alt="mosaic"
+                class="mosaic"
+              />
+              <h2 class="name">Mosaic</h2>
+              <p class="dimensions">30x45cm</p>
+              <p class="price">45€</p>
+              <button class="buyBtn">Buy Now</button>
+            </div>
+            <!-- seven -->
+            <div id="singleGrid7">
+              <img
+                src="http://mauriciolondono.be/wp/wp-content/uploads/2020/01/animales_3.jpeg"
+                alt="elephant1"
+                class="elephant1"
+              />
+              <h2 class="name">Elephant</h2>
+              <p class="dimensions">30x45cm</p>
+              <p class="price">45€</p>
+              <button class="buyBtn">Buy Now</button>
+            </div>
+            <!-- eight -->
+            <div id="singleGrid8">
+              <img
+                src="http://mauriciolondono.be/wp/wp-content/uploads/2020/01/animales_5.jpeg"
+                alt="lagarto"
+                class="lagarto"
+              />
+              <h2 class="name">Lagarto</h2>
+              <p class="dimensions">30x45cm</p>
+              <p class="price">45€</p>
+              <button class="buyBtn">Buy Now</button>
+            </div>
+            <!-- nine -->
+            <div id="singleGrid9">
+              <img
+                src="http://mauriciolondono.be/wp/wp-content/uploads/2020/01/symmetry_1.jpeg"
+                alt="escher1"
+                class="escher1"
+              />
+              <h2 class="name">Escher inspo</h2>
+              <p class="dimensions">30x45cm</p>
+              <p class="price">45€</p>
+              <button class="buyBtn">Buy Now</button>
+            </div>
+            <!-- ten -->
+            <div id="singleGrid10">
+              <img
+                src="http://mauriciolondono.be/wp/wp-content/uploads/2020/01/animales_2.jpeg"
+                alt="elephant2"
+                class="elephant2"
+              />
+              <h2 class="name">Another elephant</h2>
+              <p class="dimensions">30x45cm</p>
+              <p class="price">45€</p>
+              <button class="buyBtn">Buy Now</button>
+            </div>
+            <!-- eleven -->
+            <div id="singleGrid11">
+              <img
+                src="http://mauriciolondono.be/wp/wp-content/uploads/2020/01/fruta_17.jpeg"
+                alt="pear1"
+                class="pear1"
+              />
+              <h2 class="name">This is a pear</h2>
+              <p class="dimensions">30x45cm</p>
+              <p class="price">45€</p>
+              <button class="buyBtn">Buy Now</button>
+            </div>
+            <!-- twelve -->
+            <div id="singleGrid12">
+              <img
+                src="http://mauriciolondono.be/wp/wp-content/uploads/2020/01/fruta_14.jpeg"
+                alt="pear2"
+                class="pear2"
+              />
+              <h2 class="name">This is another pear</h2>
+              <p class="dimensions">30x45cm</p>
+              <p class="price">45€</p>
+              <button class="buyBtn">Buy Now</button>
+            </div>
+            <!-- thirteen -->
+            <div id="singleGrid13">
+              <img
+                src="http://mauriciolondono.be/wp/wp-content/uploads/2020/01/fruta_6.jpeg"
+                alt="apple4"
+                class="apple4"
+              />
+              <h2 class="name">One more apple</h2>
+              <p class="dimensions">30x45cm</p>
+              <p class="price">45€</p>
+              <button class="buyBtn">Buy Now</button>
+            </div>
+            <!-- fourteen -->
+            <div id="singleGrid14">
+              <img
+                src="http://mauriciolondono.be/wp/wp-content/uploads/2020/01/fruta_1.jpeg"
+                alt="apple5"
+                class="apple5"
+              />
+              <h2 class="name">More apples on the horizon</h2>
+              <p class="dimensions">30x45cm</p>
+              <p class="price">45€</p>
+              <button class="buyBtn">Buy Now</button>
+            </div>
+            <!-- fifteen -->
+            <div id="singleGrid15">
+              <img
+                src="http://mauriciolondono.be/wp/wp-content/uploads/2020/01/fruta_13.jpeg"
+                alt="pear3"
+                class="pear3"
+              />
+              <h2 class="name">Another pear, wow</h2>
+              <p class="dimensions">30x45cm</p>
+              <p class="price">45€</p>
+              <button class="buyBtn">Buy Now</button>
+            </div>
+            <!-- sixteen -->
+            <div id="singleGrid16">
+              <img
+                src="http://mauriciolondono.be/wp/wp-content/uploads/2020/01/animales_14.jpeg"
+                alt="peixe"
+                class="peixe"
+              />
+              <h2 class="name">Um peixe</h2>
+              <p class="dimensions">30x45cm</p>
+              <p class="price">45€</p>
+              <button class="buyBtn">Buy Now</button>
+            </div>
+            <!-- seventeen -->
+            <div id="singleGrid17">
+              <img
+                src="http://mauriciolondono.be/wp/wp-content/uploads/2020/01/fruta_120.jpeg"
+                alt="apple6"
+                class="apple6"
+              />
+              <h2 class="name">Apple, apple, apple</h2>
+              <p class="dimensions">30x45cm</p>
+              <p class="price">45€</p>
+              <button class="buyBtn">Buy Now</button>
+            </div>
+            <!-- eighteen -->
+            <div id="singleGrid18">
+              <img
+                src="http://mauriciolondono.be/wp/wp-content/uploads/2020/01/symmetry_2.jpeg"
+                alt="escher2"
+                class="escher2"
+              />
+              <h2 class="name">Another Escher inspo</h2>
+              <p class="dimensions">30x45cm</p>
+              <p class="price">45€</p>
+              <button class="buyBtn">Buy Now</button>
+            </div>
+            <!-- nineteen -->
+            <div id="singleGrid19">
+              <img
+                src="http://mauriciolondono.be/wp/wp-content/uploads/2020/01/symmetry_4.jpeg"
+                alt="escher3"
+                class="escher3"
+              />
+              <h2 class="name">Escher n°3</h2>
+              <p class="dimensions">30x45cm</p>
+              <p class="price">45€</p>
+              <button class="buyBtn">Buy Now</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+          <div id="footer">
+            <img src="imgs/logo_white.svg" alt="logo" class="logo" />
+            <div class="copyright">
+              All rights reserved to Mauricio Londoño &copy 2020
+            </div>
+            <a href="mailto:malondo50@yahoo.com" class="email">Email Me!</a>
+            <div class="socialIcons">
+              <a
+                href="https://www.facebook.com/mauriciolondonoacosta"
+                target="_blank"
+                ><img src="imgs/facebook.png" alt="facebook" class="facebook"
+              /></a>
+              <a href="https://www.instagram.com/londono9544/" target="_blank"
+                ><img
+                  src="imgs/instagram.png"
+                  alt="instagram"
+                  class="instagram"
+              /></a>
+              <div class="phone">+32487675820</div>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
-
-    <!-- GALLERY -->
-    <section id="gallery">
-      <h1 class="galleryTitle">Art in wood</h1>
-      <div class="content" id="galleryPage">
-        <template id="galleryTemplate"></template>
-
-        <nav id="categoryNav">
-          <a href="#gallery">Show All</a>
-        </nav>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-      <div id="footer">
-        <img src="imgs/logo_white.svg" alt="logo" class="logo" />
-        <div class="copyright">
-          All rights reserved to Mauricio Londoño &copy 2020
-        </div>
-        <a href="mailto:malondo50@yahoo.com" class="email">Email Me!</a>
-        <div class="socialIcons">
-          <a
-            href="https://www.facebook.com/mauriciolondonoacosta"
-            target="_blank"
-            ><img src="imgs/facebook.png" alt="facebook" class="facebook"
-          /></a>
-          <a href="https://www.instagram.com/londono9544/" target="_blank"
-            ><img src="imgs/instagram.png" alt="instagram" class="instagram"
-          /></a>
-          <div class="phone">+32487675820</div>
-        </div>
-      </div>
-    </footer>
 
     <script src="script.js"></script>
   </body>

@@ -21,7 +21,7 @@
   --text-color: #000;
 }
 
-/*----------------------------- INDEX -------------------------*/
+/*----------------------------- INDEX.HTML -------------------------*/
 /*----------- HEADER ---------*/
 #header {
   font-family: var(--nav-font);
@@ -273,4 +273,662 @@ a.email::before {
   content: "☏";
   width: 25px;
   transform: scale(1.5);
+}
+
+/*----------------------------- WOOD.HTML -------------------------*/
+/*----------- TITLE ---------*/
+#woodGallery {
+  font-family: var(--simple-font);
+}
+.woodGalleryTitle {
+  font-weight: 100;
+  font-size: 46px;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/*----------- WOOD GALLERY ---------*/
+/* images */
+#woodGalleryGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 0.4fr);
+  row-gap: 5px;
+  column-gap: 5px;
+  margin: 0 100px;
+}
+/* template elements */
+#woodGalleryGrid img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+h2.name,
+p.dimensions,
+p.price,
+.buyBtn,
+.buyBtn2 {
+  display: grid;
+  justify-content: center;
+  align-self: center;
+  line-height: 2.3em;
+}
+h2.name {
+  font-weight: 100;
+  font-size: 34px;
+  font-style: italic;
+}
+.buyBtn {
+  background: inherit;
+  border: 1px solid;
+  padding: 5px 10px;
+  margin: 5px 150px 100px 150px;
+  font-size: 12px;
+  font-family: var(--simple-font);
+  cursor: pointer;
+}
+/* one */
+#singleGrid1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 0.1fr);
+  grid-template-areas: "img" "name" "dimensions" "price" "btn";
+}
+#woodGalleryGrid .butterfly {
+  grid-area: img;
+  width: 90%;
+}
+#singleGrid1 h2.name {
+  grid-area: name;
+}
+#singleGrid1 p.dimensions {
+  grid-area: dimensions;
+}
+#singleGrid1 p.price {
+  grid-area: price;
+}
+#singleGrid1 .buyBtn {
+  grid-area: btn;
+}
+/* two */
+#singleGrid2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 0.1fr);
+  grid-template-areas: "img" "name" "dimensions" "price" "btn";
+}
+#woodGalleryGrid .apple1 {
+  grid-area: img;
+  width: 90%;
+}
+#singleGrid2 h2.name {
+  grid-area: name;
+}
+#singleGrid2 p.dimensions {
+  grid-area: dimensions;
+}
+#singleGrid2 p.price {
+  grid-area: price;
+}
+#singleGrid2 .buyBtn {
+  grid-area: btn;
+}
+/* three */
+#singleGrid3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 0.1fr);
+  grid-template-areas: "img" "name" "dimensions" "price" "btn";
+}
+#woodGalleryGrid .indian {
+  grid-area: img;
+  width: 70%;
+}
+#singleGrid3 h2.name {
+  grid-area: name;
+}
+#singleGrid3 p.dimensions {
+  grid-area: dimensions;
+}
+#singleGrid3 p.price {
+  grid-area: price;
+}
+#singleGrid3 .buyBtn {
+  grid-area: btn;
+}
+/* four */
+#singleGrid4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 0.1fr);
+  grid-template-areas: "img" "name" "dimensions" "price" "btn";
+}
+#woodGalleryGrid .apple2 {
+  grid-area: img;
+  width: 90%;
+}
+#singleGrid4 h2.name {
+  grid-area: name;
+}
+#singleGrid4 p.dimensions {
+  grid-area: dimensions;
+}
+#singleGrid4 p.price {
+  grid-area: price;
+}
+#singleGrid4 .buyBtn {
+  grid-area: btn;
+}
+/* five */
+#singleGrid5 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 0.1fr);
+  grid-template-areas: "img" "name" "dimensions" "price" "btn";
+}
+#woodGalleryGrid .apple3 {
+  grid-area: img;
+  width: 90%;
+}
+#singleGrid5 h2.name {
+  grid-area: name;
+}
+#singleGrid5 p.dimensions {
+  grid-area: dimensions;
+}
+#singleGrid5 p.price {
+  grid-area: price;
+}
+#singleGrid5 .buyBtn {
+  grid-area: btn;
+}
+/* six */
+#singleGrid6 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 0.1fr);
+  grid-template-areas: "img" "name" "dimensions" "price" "btn";
+}
+#woodGalleryGrid .mosaic {
+  grid-area: img;
+  width: 90%;
+}
+#singleGrid6 h2.name {
+  grid-area: name;
+}
+#singleGrid6 p.dimensions {
+  grid-area: dimensions;
+}
+#singleGrid6 p.price {
+  grid-area: price;
+}
+#singleGrid6 .buyBtn {
+  grid-area: btn;
+}
+/* seven */
+#singleGrid7 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 0.1fr);
+  grid-template-areas: "img" "name" "dimensions" "price" "btn";
+}
+#woodGalleryGrid .elephant1 {
+  grid-area: img;
+  width: 90%;
+}
+#singleGrid7 h2.name {
+  grid-area: name;
+}
+#singleGrid7 p.dimensions {
+  grid-area: dimensions;
+}
+#singleGrid7 p.price {
+  grid-area: price;
+}
+#singleGrid7 .buyBtn {
+  grid-area: btn;
+}
+/* eight */
+#singleGrid8 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 0.1fr);
+  grid-template-areas: "img" "name" "dimensions" "price" "btn";
+}
+#woodGalleryGrid .lagarto {
+  grid-area: img;
+  width: 90%;
+}
+#singleGrid8 h2.name {
+  grid-area: name;
+}
+#singleGrid8 p.dimensions {
+  grid-area: dimensions;
+}
+#singleGrid8 p.price {
+  grid-area: price;
+}
+#singleGrid8 .buyBtn {
+  grid-area: btn;
+}
+/* nine */
+#singleGrid9 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 0.1fr);
+  grid-template-areas: "img" "name" "dimensions" "price" "btn";
+}
+#woodGalleryGrid .escher1 {
+  grid-area: img;
+  width: 90%;
+}
+#singleGrid9 h2.name {
+  grid-area: name;
+}
+#singleGrid9 p.dimensions {
+  grid-area: dimensions;
+}
+#singleGrid9 p.price {
+  grid-area: price;
+}
+#singleGrid9 .buyBtn {
+  grid-area: btn;
+}
+/* ten */
+#singleGrid10 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 0.1fr);
+  grid-template-areas: "img" "name" "dimensions" "price" "btn";
+}
+#woodGalleryGrid .elephant2 {
+  grid-area: img;
+  width: 90%;
+  margin-right: auto;
+}
+#singleGrid10 h2.name {
+  grid-area: name;
+}
+#singleGrid10 p.dimensions {
+  grid-area: dimensions;
+}
+#singleGrid10 p.price {
+  grid-area: price;
+}
+#singleGrid10 .buyBtn {
+  grid-area: btn;
+}
+/* eleven */
+#singleGrid11 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 0.1fr);
+  grid-template-areas: "img" "name" "dimensions" "price" "btn";
+}
+#woodGalleryGrid .pear1 {
+  grid-area: img;
+  width: 90%;
+  margin-left: auto;
+}
+#singleGrid11 h2.name {
+  grid-area: name;
+}
+#singleGrid11 p.dimensions {
+  grid-area: dimensions;
+}
+#singleGrid11 p.price {
+  grid-area: price;
+}
+#singleGrid11 .buyBtn {
+  grid-area: btn;
+}
+/* twelve */
+#singleGrid12 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 0.1fr);
+  grid-template-areas: "img" "name" "dimensions" "price" "btn";
+}
+#woodGalleryGrid .pear2 {
+  grid-area: img;
+  width: 90%;
+}
+#singleGrid12 h2.name {
+  grid-area: name;
+}
+#singleGrid12 p.dimensions {
+  grid-area: dimensions;
+}
+#singleGrid12 p.price {
+  grid-area: price;
+}
+#singleGrid12 .buyBtn {
+  grid-area: btn;
+}
+/* thirteen */
+#singleGrid13 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 0.1fr);
+  grid-template-areas: "img" "name" "dimensions" "price" "btn";
+}
+#woodGalleryGrid .apple4 {
+  grid-area: img;
+  width: 90%;
+}
+#singleGrid13 h2.name {
+  grid-area: name;
+}
+#singleGrid13 p.dimensions {
+  grid-area: dimensions;
+}
+#singleGrid13 p.price {
+  grid-area: price;
+}
+#singleGrid13 .buyBtn {
+  grid-area: btn;
+}
+/* fourteen */
+#singleGrid14 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 0.1fr);
+  grid-template-areas: "img" "name" "dimensions" "price" "btn";
+}
+#woodGalleryGrid .apple5 {
+  grid-area: img;
+  width: 90%;
+}
+#singleGrid14 h2.name {
+  grid-area: name;
+}
+#singleGrid14 p.dimensions {
+  grid-area: dimensions;
+}
+#singleGrid14 p.price {
+  grid-area: price;
+}
+#singleGrid14 .buyBtn {
+  grid-area: btn;
+}
+/* fifteen */
+#singleGrid15 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 0.1fr);
+  grid-template-areas: "img" "name" "dimensions" "price" "btn";
+}
+#woodGalleryGrid .pear3 {
+  grid-area: img;
+  width: 90%;
+}
+#singleGrid15 h2.name {
+  grid-area: name;
+}
+#singleGrid15 p.dimensions {
+  grid-area: dimensions;
+}
+#singleGrid15 p.price {
+  grid-area: price;
+}
+#singleGrid15 .buyBtn {
+  grid-area: btn;
+}
+/* sixteen */
+#singleGrid16 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 0.1fr);
+  grid-template-areas: "img" "name" "dimensions" "price" "btn";
+}
+#woodGalleryGrid .peixe {
+  grid-area: img;
+  width: 90%;
+}
+#singleGrid16 h2.name {
+  grid-area: name;
+}
+#singleGrid716 p.dimensions {
+  grid-area: dimensions;
+}
+#singleGrid16 p.price {
+  grid-area: price;
+}
+#singleGrid16 .buyBtn {
+  grid-area: btn;
+}
+/* seventeen */
+#singleGrid17 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 0.1fr);
+  grid-template-areas: "img" "name" "dimensions" "price" "btn";
+}
+#woodGalleryGrid .apple6 {
+  grid-area: img;
+  width: 90%;
+}
+#singleGrid17 h2.name {
+  grid-area: name;
+}
+#singleGrid17 p.dimensions {
+  grid-area: dimensions;
+}
+#singleGrid17 p.price {
+  grid-area: price;
+}
+#singleGrid17 .buyBtn {
+  grid-area: btn;
+}
+/* eighteen */
+#singleGrid18 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 0.1fr);
+  grid-template-areas: "img" "name" "dimensions" "price" "btn";
+}
+#woodGalleryGrid .escher2 {
+  grid-area: img;
+  width: 90%;
+}
+#singleGrid18 h2.name {
+  grid-area: name;
+}
+#singleGrid18 p.dimensions {
+  grid-area: dimensions;
+}
+#singleGrid18 p.price {
+  grid-area: price;
+}
+#singleGrid18 .buyBtn {
+  grid-area: btn;
+}
+/* nineteen */
+#singleGrid19 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 0.1fr);
+  grid-template-areas: "img" "name" "dimensions" "price" "btn";
+}
+#woodGalleryGrid .escher3 {
+  grid-area: img;
+  width: 90%;
+}
+#singleGrid19 h2.name {
+  grid-area: name;
+}
+#singleGrid19 p.dimensions {
+  grid-area: dimensions;
+}
+#singleGrid19 p.price {
+  grid-area: price;
+}
+#singleGrid19 .buyBtn {
+  grid-area: btn;
+}
+
+/*----------------------------- GLASS.HTML -------------------------*/
+/*----------- TITLE ---------*/
+#glass {
+  font-family: var(--simple-font);
+}
+.glassGalleryTitle {
+  font-weight: 100;
+  font-size: 46px;
+  font-style: italic;
+  text-align: center;
+  font-family: var(--simple-font);
+  margin-bottom: 60px;
+}
+
+/*----------- GLASS GALLERY ---------*/
+#glassGalleryGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 0.4fr);
+  row-gap: 5px;
+  column-gap: 5px;
+  margin: 0 100px;
+  font-family: var(--simple-font);
+}
+/* template elements */
+#glassGalleryGrid img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.buyBtn2 {
+  background: inherit;
+  border: 1px solid;
+  padding: 5px 10px;
+  margin: 5px 250px 100px 250px;
+  font-size: 12px;
+  font-family: var(--simple-font);
+  cursor: pointer;
+}
+/* one */
+#singleGridGlass1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 0.1fr);
+  grid-template-areas: "img" "name" "dimensions" "price" "btn";
+}
+#glassGalleryGrid .juntos {
+  grid-area: img;
+  width: 80%;
+}
+#singleGridGlass1 h2.name {
+  grid-area: name;
+}
+#singleGridGlass1 p.dimensions {
+  grid-area: dimensions;
+}
+#singleGridGlass1 p.price {
+  grid-area: price;
+}
+#singleGridGlass1 .buyBtn {
+  grid-area: btn;
+}
+/* two */
+#singleGridGlass2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 0.1fr);
+  grid-template-areas: "img" "name" "dimensions" "price" "btn";
+}
+#glassGalleryGrid .white-green {
+  grid-area: img;
+  width: 80%;
+}
+#singleGridGlass2 h2.name {
+  grid-area: name;
+}
+#singleGridGlass2 p.dimensions {
+  grid-area: dimensions;
+}
+#singleGridGlass2 p.price {
+  grid-area: price;
+}
+#singleGridGlass2 .buyBtn {
+  grid-area: btn;
+}
+/* three */
+#singleGridGlass3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 0.1fr);
+  grid-template-areas: "img" "name" "dimensions" "price" "btn";
+}
+#glassGalleryGrid .blue-orange {
+  grid-area: img;
+  width: 80%;
+}
+#singleGridGlass3 h2.name {
+  grid-area: name;
+}
+#singleGridGlass3 p.dimensions {
+  grid-area: dimensions;
+}
+#singleGridGlass3 p.price {
+  grid-area: price;
+}
+#singleGridGlass3 .buyBtn {
+  grid-area: btn;
+}
+/* four */
+#singleGridGlass4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 0.1fr);
+  grid-template-areas: "img" "name" "dimensions" "price" "btn";
+}
+#glassGalleryGrid .worm {
+  grid-area: img;
+  width: 80%;
+}
+#singleGridGlass4 h2.name {
+  grid-area: name;
+}
+#singleGridGlass4 p.dimensions {
+  grid-area: dimensions;
+}
+#singleGridGlass4 p.price {
+  grid-area: price;
+}
+#singleGridGlass4 .buyBtn {
+  grid-area: btn;
+}
+/* five */
+#singleGridGlass5 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 0.1fr);
+  grid-template-areas: "img" "name" "dimensions" "price" "btn";
+}
+#glassGalleryGrid .red-white {
+  grid-area: img;
+  width: 60%;
+}
+#singleGridGlass5 h2.name {
+  grid-area: name;
+}
+#singleGridGlass5 p.dimensions {
+  grid-area: dimensions;
+}
+#singleGridGlass5 p.price {
+  grid-area: price;
+}
+#singleGridGlass5 .buyBtn {
+  grid-area: btn;
+}
+
+/*------------ LANGUAGE -----------*/
+.langWrap a {
+  text-transform: uppercase;
+  padding-right: 6px;
+  border-right: 1px solid;
+}
+.langWrap a:last-of-type {
+  border: none;
 }

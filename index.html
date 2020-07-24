@@ -9,107 +9,97 @@
   </head>
 
   <body>
-    <!-- HEADER -->
-    <div id="header">
-      <img src="imgs/logo.svg" alt="logo" id="logo" />
-      <nav class="nav" id="nav">
-        <a href="#">Home</a>
-        <a href="wood.html" class="woodLink">Wood</a>
-        <a href="glass.html" class="glassLink">Glass</a>
-      </nav>
-      <div class="language">EN / FR</div>
+    <div class="language">
+      <!-- all content to be translated later -->
+      <div class="content">
+        <!-- HEADER -->
+        <div id="header">
+          <img src="imgs/logo.svg" alt="logo" id="logo" />
+          <nav class="nav" id="nav">
+            <a href="#" class="active" class="homeLink">Home</a>
+            <a href="wood.html" class="woodLink">Wood</a>
+            <a href="glass.html" class="glassLink">Glass</a>
+          </nav>
+          <!-- language selector -->
+          <div class="langWrap">
+            <a href="#" language="english" class="active">EN</a>
+            <a href="#" language="español">ES</a>
+            <a href="#" language="français">FR</a>
+          </div>
+        </div>
+
+        <!-- PROFILE -->
+        <section id="profile">
+          <img
+            src="http://mauriciolondono.be/wp/wp-content/uploads/2020/07/papa-1.png"
+            alt="mauricio"
+            class="profileImg"
+          />
+          <h2 class="profileTitle">The person behind the art</h2>
+          <p class="description">
+            Hi, my name is Mauricio Londoño and I am an independent artist who
+            focuses mainly on working with wood, as well as glass. Throughout
+            the years I have been developing works of my own and would now like
+            to share these pieces with the world.
+          </p>
+        </section>
+
+        <!-- WOOD SECTION -->
+        <section id="wood">
+          <img
+            src="http://mauriciolondono.be/wp/wp-content/uploads/2020/01/figura_2.jpeg"
+            alt="woodFigure"
+          />
+          <div class="woodText">
+            <h2 class="woodSub">Wood sculptures</h2>
+            <p class="woodDesc">Description about wood work etc.</p>
+            <div class="btn">
+              <a href="wood.html"><button id="woodBtn">Read More</button></a>
+            </div>
+          </div>
+        </section>
+
+        <!-- GLASS SECTION -->
+        <section id="glass">
+          <img
+            src="http://mauriciolondono.be/wp/wp-content/uploads/2020/01/vidrio_1.jpeg"
+            alt="glassFigure"
+          />
+          <div class="glassText">
+            <h2 class="glassSub">Glass sculptures</h2>
+            <p class="glassDesc">Description about glass work etc.</p>
+            <div class="btn">
+              <a href="glass.html"><button id="glassBtn">Read More</button></a>
+            </div>
+          </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+          <div id="footer">
+            <img src="imgs/logo_white.svg" alt="logo" class="logo" />
+            <div class="copyright">
+              All rights reserved to Mauricio Londoño &copy 2020
+            </div>
+            <a href="mailto:malondo50@yahoo.com" class="email">Email Me!</a>
+            <div class="socialIcons">
+              <a
+                href="https://www.facebook.com/mauriciolondonoacosta"
+                target="_blank"
+                ><img src="imgs/facebook.png" alt="facebook" class="facebook"
+              /></a>
+              <a href="https://www.instagram.com/londono9544/" target="_blank"
+                ><img
+                  src="imgs/instagram.png"
+                  alt="instagram"
+                  class="instagram"
+              /></a>
+              <div class="phone">+32487675820</div>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
-
-    <!-- PROFILE -->
-    <section id="profile">
-      <img
-        src="http://mauriciolondono.be/wp/wp-content/uploads/2020/07/papa-1.png"
-        alt="mauricio"
-        class="profileImg"
-      />
-      <h2 class="profileTitle">The person behind the art</h2>
-      <p class="description">
-        Hi, my name is Mauricio Londoño and I am an independent artist who
-        focuses mainly on working with wood, as well as glass. Throughout the
-        years I have been developing works of my own and would now like to share
-        these pieces with the world.
-      </p>
-    </section>
-
-    <!-- WOOD SECTION -->
-    <section id="wood">
-      <img
-        src="http://mauriciolondono.be/wp/wp-content/uploads/2020/01/figura_1.jpeg"
-        alt="woodFigure"
-      />
-      <div class="woodText">
-        <h2 class="woodSub">Wood sculptures</h2>
-        <p class="woodDesc">Description about wood work etc.</p>
-        <div class="btn">
-          <a href="wood.html"><button id="woodBtn">Read More</button></a>
-        </div>
-      </div>
-    </section>
-
-    <!-- GLASS SECTION -->
-    <section id="glass">
-      <img
-        src="http://mauriciolondono.be/wp/wp-content/uploads/2020/01/vidrio_1.jpeg"
-        alt="glassFigure"
-      />
-      <div class="glassText">
-        <h2 class="glassSub">Glass sculptures</h2>
-        <p class="glassDesc">Description about glass work etc.</p>
-        <div class="btn">
-          <a href="glass.html"><button id="glassBtn">Read More</button></a>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT FORM -->
-    <!-- <section id="contactForm">
-      <form
-        action="mailto:malondo50@yahoo.com"
-        method="post"
-        enctype="text/plain"
-      >
-        <label for="name"
-          >Name
-          <input type="text" />
-        </label>
-        <label for="email"
-          >E-mail address
-          <input type="email" />
-        </label>
-        <label for="message">
-          Message
-          <textarea for="message"></textarea>
-        </label>
-        <input type="submit" value="submit" />
-      </form>
-    </section> -->
-
-    <!-- FOOTER -->
-    <footer>
-      <div id="footer">
-        <img src="imgs/logo_white.svg" alt="logo" class="logo" />
-        <div class="copyright">
-          All rights reserved to Mauricio Londoño &copy 2020
-        </div>
-        <a href="mailto:malondo50@yahoo.com" class="email">Email Me!</a>
-        <div class="socialIcons">
-          <a
-            href="https://www.facebook.com/mauriciolondonoacosta"
-            target="_blank"
-            ><img src="imgs/facebook.png" alt="facebook" class="facebook"
-          /></a>
-          <a href="https://www.instagram.com/londono9544/" target="_blank"
-            ><img src="imgs/instagram.png" alt="instagram" class="instagram"
-          /></a>
-          <div class="phone">+32487675820</div>
-        </div>
-      </div>
-    </footer>
 
     <script src="script.js"></script>
   </body>
