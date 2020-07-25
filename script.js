@@ -88,9 +88,11 @@ const woodBtn = document.querySelector("#wood #woodBtn");
 const glassSub = document.querySelector("#glass .glassSub");
 const glassDesc = document.querySelector("#glass .glassDesc");
 const glassBtn = document.querySelector("#glass #glassBtn");
-//btns
-const woodBuyBtn = document.querySelector("#woodGallery .buyBtn");
-const glassBuyBtn = document.querySelector("#glassGallery .buyBtn");
+//button
+const btn = document.querySelector(".btn");
+//footer
+const copyright = document.querySelector(".copyright");
+const email = document.querySelector(".email");
 
 //loop through each language & set translation
 langLink.forEach((el) => {
@@ -113,12 +115,15 @@ langLink.forEach((el) => {
     glassSub.textContent = languages[attr].glassSub;
     glassDesc.textContent = languages[attr].glassDesc;
     glassBtn.textContent = languages[attr].glassBtn;
-
+    //button
     if (window.location.href.includes("wood")) {
-      woodBuyBtn.textContent = languages[attr].woodBuyBtn;
+      btn.textContent = languages[attr].btn;
     } else if (window.location.href.includes("glass")) {
-      glassBuyBtn.textContent = languages[attr].glassBuyBtn;
+      btn.textContent = languages[attr].btn;
     }
+    //footer
+    copyright.textContent = languages[attr].copyright;
+    email.textContent = languages[attr].email;
   });
 });
 //store language translations
@@ -136,8 +141,9 @@ let languages = {
     glassSub: "Glass sculptures",
     glassDesc: "Description about glass work etc.",
     glassBtn: "Read More",
-    woodBuyBtn: "Buy Now",
-    glassBuyBtn: "Buy Now",
+    btn: "Buy Now",
+    copyright: "All rights reserved to Mauricio Londoño © 2020",
+    email: "Email Me!",
   },
   español: {
     profileTitle: "La cara detrás del arte",
@@ -152,8 +158,9 @@ let languages = {
     glassSub: "Esculturas en vidrio",
     glassDesc: "Descripción sobre arte en vidrio etc.",
     glassBtn: "Leer Más",
-    woodBuyBtn: "Comprar",
-    glassBuyBtn: "Comprar",
+    btn: "Comprar",
+    copyright: "Todos los derechos reservados a Mauricio Londoño © 2020",
+    email: "Cóntactame!",
   },
   français: {
     profileTitle: "Le visage derrière de l'art",
@@ -168,7 +175,8 @@ let languages = {
     glassSub: "Sculptures en verre",
     glassDesc: "Description sur le travail en verre etc.",
     glassBtn: "Lire plus",
-    woodBuyBtn: "Acheter",
-    glassBuyBtn: "Acheter",
+    btn: "Acheter",
+    copyright: "Tous droits réservés à Mauricio Londoño © 2020",
+    email: "Contactez-moi!",
   },
 };
