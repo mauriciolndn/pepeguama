@@ -68,7 +68,20 @@
 /* language */
 .language {
   text-align: right;
-  margin-right: 30px;
+}
+.langWrap a {
+  text-transform: uppercase;
+  padding-right: 6px;
+  border-right: 1px solid;
+  text-decoration: none;
+  color: var(--text-color);
+}
+.langWrap .active {
+  text-decoration: underline;
+}
+.langWrap a:last-of-type {
+  border: none;
+  margin-right: 20px;
 }
 
 /*----------- PROFILE SECTION ----------*/
@@ -149,6 +162,7 @@
   display: flex;
   align-self: flex-start;
   justify-content: center;
+  cursor: pointer;
 }
 
 /*----------- GLASS SECTION ----------*/
@@ -199,6 +213,7 @@
   display: flex;
   align-self: flex-start;
   justify-content: center;
+  cursor: pointer;
 }
 
 /*----------- FOOTER ---------*/
@@ -211,8 +226,7 @@
     "copyright email";
   padding: 25px;
   margin-top: 50px;
-  background-color: black;
-  color: white;
+  background-color: lightgrey;
 }
 /* copyright */
 .copyright {
@@ -230,13 +244,8 @@
 .socialIcons img {
   grid-area: socialMedia;
   float: right;
-}
-.instagram {
-  width: 40px;
-}
-.facebook {
+  margin-left: 5px;
   width: 30px;
-  padding-top: 4px;
 }
 /* email */
 a.email {
@@ -244,13 +253,14 @@ a.email {
   display: flex;
   justify-content: flex-end;
   align-self: flex-end;
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
 }
 a.email::before {
   content: "✉";
   width: 25px;
   transform: scale(2);
+  margin-right: 20px;
 }
 /* phone */
 .phone {
@@ -317,6 +327,8 @@ h2.name {
   font-size: 12px;
   font-family: var(--simple-font);
   cursor: pointer;
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 /*----------------------------- GLASS.HTML -------------------------*/
@@ -339,12 +351,101 @@ h2.name {
   width: 90%;
 }
 
-/*------------ LANGUAGE -----------*/
-.langWrap a {
-  text-transform: uppercase;
-  padding-right: 6px;
-  border-right: 1px solid;
+/*--------------------------- MEDIA QUERIES -------------------------*/
+/*----------- TABLET VIEW -------------*/
+@media screen and (max-width: 1200px) and (min-device-width: 768px) {
+  /*---- INDEX.HTML ----*/
+  /* header */
+  #logo {
+    width: 40%;
+  }
+  #nav a {
+    margin: 0 35px;
+    font-size: 18px;
+  }
+  .language {
+    font-size: 18px;
+  }
+  /* profile */
+  .profileImg {
+    width: 28%;
+    margin: 10px auto;
+  }
+  .description {
+    margin: 0 100px;
+  }
+  /* wood & glass preview */
+  #wood img {
+    margin-left: 100px;
+    margin-bottom: 100px;
+    width: 70%;
+  }
+  #wood .woodSub,
+  #glass .glassSub {
+    font-size: 40px;
+  }
+  #wood .woodDesc,
+  #glass .glassDesc {
+    margin: 40px 0;
+  }
+  #wood #woodBtn,
+  #glass #glassBtn {
+    padding: 15px 35px;
+  }
+  /* footer */
+  .copyright {
+    margin: 0;
+    font-size: 12px;
+  }
+  a.email {
+    font-size: 12px;
+  }
+  /* social media icons */
+  .socialIcons img {
+    width: 15px;
+  }
+
+  /*---- WOOD.HTML & GLASS.HTML -----*/
+  .woodGalleryTitle,
+  .glassGalleryTitle {
+    font-size: 40px;
+    margin-top: 30px;
+  }
+  #woodList,
+  #glassList {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 10px;
+  }
+  .woodList .img {
+    width: 70%;
+  }
+  h2.name {
+    font-size: 36px;
+  }
+  p.dimensions {
+    font-size: 20px;
+  }
+  h3.price {
+    font-size: 24px;
+  }
+  .btn {
+    margin: 5px 120px 100px 120px;
+    padding: 3px 15px;
+    font-size: 18px;
+  }
 }
-.langWrap a:last-of-type {
-  border: none;
+
+/*----------- MOBILE VIEW -------------*/
+@media screen and (max-width: 420px) {
+  /*---- INDEX.HTML ----*/
+  /*---- WOOD.HTML -----*/
+  /*---- GLASS.HTML ----*/
+}
+
+/*----------- OTHER MOBILES -----------*/
+/*mobile 325 or smaller*/
+@media screen and (max-width: 325px) {
+  /*---- INDEX.HTML ----*/
+  /*---- WOOD.HTML -----*/
+  /*---- GLASS.HTML ----*/
 }
