@@ -121,7 +121,6 @@
   grid-area: woodImg;
   width: 65%;
   display: flex;
-  /* justify-content: flex-end; */
   margin-left: 200px;
   margin-bottom: 150px;
 }
@@ -393,6 +392,9 @@ h2.name {
     padding: 15px 35px;
   }
   /* footer */
+  #footer {
+    padding: 10px;
+  }
   .copyright {
     margin: 0;
     font-size: 12px;
@@ -421,6 +423,7 @@ h2.name {
   }
   h2.name {
     font-size: 36px;
+    font-weight: 100;
   }
   p.dimensions {
     font-size: 20px;
@@ -438,8 +441,114 @@ h2.name {
 /*----------- MOBILE VIEW -------------*/
 @media screen and (max-width: 420px) {
   /*---- INDEX.HTML ----*/
-  /*---- WOOD.HTML -----*/
-  /*---- GLASS.HTML ----*/
+  /* header */
+  #logo {
+    width: 40%;
+  }
+  #nav a {
+    margin: 0 15px;
+    font-size: 12px;
+  }
+  .language {
+    font-size: 12px;
+  }
+  .langWrap a {
+    padding-right: 3px;
+  }
+  .langWrap a:last-of-type {
+    margin-right: 5px;
+  }
+  /* profile */
+  #profile {
+    padding-bottom: 80px;
+  }
+  .profileImg {
+    width: 35%;
+  }
+  .profileTitle {
+    font-size: 32px;
+    margin-top: 0;
+  }
+  .description {
+    margin: 0 30px;
+    font-size: 16px;
+    line-height: 130%;
+  }
+  /* wood & glass preview */
+  .woodText,
+  .glassText {
+    margin: 0 30px;
+  }
+  #wood img {
+    margin-left: 50px;
+    margin-bottom: 80px;
+    width: 75%;
+  }
+  #glass img {
+    width: 75%;
+  }
+  #wood .woodSub,
+  #glass .glassSub {
+    font-size: 26px;
+  }
+  #wood .woodDesc,
+  #glass .glassDesc {
+    font-size: 14px;
+    margin: 20px 0;
+    text-align: center;
+  }
+  #wood #woodBtn,
+  #glass #glassBtn {
+    padding: 8px 15px;
+    font-size: 10px;
+  }
+  /* footer */
+  #footer {
+    padding: 10px;
+  }
+  .copyright {
+    margin: 0;
+    font-size: 8px;
+    text-align: left;
+  }
+  a.email {
+    font-size: 8px;
+  }
+  /* social media icons */
+  .socialIcons img {
+    width: 10px;
+  }
+
+  /*---- WOOD.HTML & GLASS.HTML -----*/
+  .woodGalleryTitle,
+  .glassGalleryTitle {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  #woodList,
+  #glassList {
+    grid-template-columns: 1fr;
+    margin: 0 20px;
+  }
+  #woodProduct .img,
+  #glassProduct .img {
+    width: 70%;
+  }
+  h2.name {
+    font-size: 26px;
+  }
+  p.dimensions {
+    font-size: 14px;
+  }
+  h3.price {
+    font-size: 16px;
+  }
+  .btn {
+    margin: 10px 150px 70px 150px;
+    padding: 0 5px;
+    font-size: 10px;
+  }
 }
 
 /*----------- OTHER MOBILES -----------*/
