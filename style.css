@@ -223,7 +223,7 @@
   grid-template-areas:
     "logo socialMedia"
     "copyright email";
-  padding: 25px;
+  padding: 20px;
   margin-top: 50px;
   background-color: lightgrey;
 }
@@ -231,20 +231,21 @@
 .copyright {
   grid-area: copyright;
   margin-top: 30px;
+  font-size: 14px;
   display: flex;
   align-self: flex-end;
 }
 /* logo */
 .logo {
   grid-area: logo;
-  width: 12%;
+  width: 10%;
 }
 /* social media icons */
 .socialIcons img {
   grid-area: socialMedia;
   float: right;
   margin-left: 5px;
-  width: 30px;
+  width: 26px;
 }
 /* email */
 a.email {
@@ -254,6 +255,7 @@ a.email {
   align-self: flex-end;
   color: var(--text-color);
   text-decoration: none;
+  font-size: 14px;
 }
 a.email::before {
   content: "✉";
@@ -359,8 +361,8 @@ h2.name {
     width: 40%;
   }
   #nav a {
-    margin: 0 35px;
-    font-size: 18px;
+    margin: 0 45px;
+    font-size: 14px;
   }
   .language {
     font-size: 18px;
@@ -402,7 +404,6 @@ h2.name {
   a.email {
     font-size: 12px;
   }
-  /* social media icons */
   .socialIcons img {
     width: 15px;
   }
