@@ -553,9 +553,75 @@ h2.name {
 }
 
 /*----------- OTHER MOBILES -----------*/
-/*mobile 325 or smaller*/
-@media screen and (max-width: 325px) {
+/*mobile 375 or smaller*/
+@media screen and (max-width: 375px) {
   /*---- INDEX.HTML ----*/
-  /*---- WOOD.HTML -----*/
-  /*---- GLASS.HTML ----*/
+  /* header */
+  #logo {
+    width: 50%;
+  }
+  #nav a {
+    margin: 0 10px;
+    font-size: 12px;
+  }
+  .language {
+    font-size: 10px;
+  }
+  .langWrap a {
+    padding-right: 10px;
+    border-right: 0;
+  }
+  .langWrap a:last-of-type {
+    padding-right: 5px;
+  }
+  .langWrap {
+    display: grid;
+  }
+  /* profile */
+  .profileImg {
+    width: 35%;
+  }
+  .profileTitle {
+    font-size: 28px;
+  }
+  .description {
+    margin: 0 35px;
+    font-size: 14px;
+    line-height: 140%;
+  }
+  /* wood & glass preview */
+  .woodText,
+  .glassText {
+    margin: 0 36px;
+    text-align: center;
+  }
+  #wood .woodSub,
+  #glass .glassSub {
+    font-size: 22px;
+  }
+  #wood .woodDesc,
+  #glass .glassDesc {
+    font-size: 12px;
+    margin: 20px 0;
+    text-align: center;
+  }
+  #wood #woodBtn,
+  #glass #glassBtn {
+    padding: 6px 12px;
+    font-size: 8px;
+  }
+
+  /*---- WOOD.HTML & GLASS.HTML -----*/
+  .woodGalleryTitle,
+  .glassGalleryTitle {
+    font-size: 26px;
+  }
+  h2.name {
+    font-size: 24px;
+  }
+  .btn {
+    margin: 10px 130px 70px 130px;
+    padding: 0 5px;
+    font-size: 10px;
+  }
 }
