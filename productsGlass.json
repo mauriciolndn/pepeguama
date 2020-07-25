@@ -1,0 +1,42 @@
+[
+  {
+    "id": "20",
+    "image": "/vidrio_17.jpeg",
+    "name": "Juntos pero no revueltos",
+    "dimensions": "30 x 45cm",
+    "price": 20,
+    "btn": "https://www.youtube.com/watch?v=023Psne_-_4"
+  },
+  {
+    "id": "21",
+    "image": "/vidrio_11.jpeg",
+    "name": "White & green",
+    "dimensions": "30 x 45cm",
+    "price": 20,
+    "btn": "https://www.youtube.com/watch?v=023Psne_-_4"
+  },
+  {
+    "id": "22",
+    "image": "/vidrio_6.jpeg",
+    "name": "Blue & orange",
+    "dimensions": "30 x 45cm",
+    "price": 20,
+    "btn": "https://www.youtube.com/watch?v=023Psne_-_4"
+  },
+  {
+    "id": "23",
+    "image": "/vidrio_15.jpeg",
+    "name": "Gusano",
+    "dimensions": "30 x 45cm",
+    "price": 20,
+    "btn": "https://www.youtube.com/watch?v=023Psne_-_4"
+  },
+  {
+    "id": "24",
+    "image": "/vidrio_1.jpeg",
+    "name": "Red & white",
+    "dimensions": "30 x 45cm",
+    "price": 20,
+    "btn": "https://www.youtube.com/watch?v=023Psne_-_4"
+  }
+]

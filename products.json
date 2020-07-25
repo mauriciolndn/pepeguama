@@ -1,0 +1,154 @@
+[
+  {
+    "id": "1",
+    "image": "/animales_1.jpeg",
+    "name": "Butterfly",
+    "dimensions": "30 x 45cm",
+    "price": 40,
+    "btn": "https://www.youtube.com/watch?v=023Psne_-_4"
+  },
+  {
+    "id": "2",
+    "image": "/figura_2.jpeg",
+    "name": "Indio",
+    "dimensions": "30 x 45cm",
+    "price": 40,
+    "btn": "https://www.youtube.com/watch?v=023Psne_-_4"
+  },
+  {
+    "id": "3",
+    "image": "/fruta_18.jpeg",
+    "name": "Apple",
+    "dimensions": "30 x 45cm",
+    "price": 40,
+    "btn": "https://www.youtube.com/watch?v=023Psne_-_4"
+  },
+  {
+    "id": "4",
+    "image": "/fruta_12.jpeg",
+    "name": "Another apple",
+    "dimensions": "30 x 45cm",
+    "price": 40,
+    "btn": "https://www.youtube.com/watch?v=023Psne_-_4"
+  },
+  {
+    "id": "5",
+    "image": "/fruta_8.jpeg",
+    "name": "More apples",
+    "dimensions": "30 x 45cm",
+    "price": 40,
+    "btn": "https://www.youtube.com/watch?v=023Psne_-_4"
+  },
+  {
+    "id": "6",
+    "image": "/symmetry_5.jpeg",
+    "name": "Mosaic",
+    "dimensions": "30 x 45cm",
+    "price": 20,
+    "btn": "https://www.youtube.com/watch?v=023Psne_-_4"
+  },
+  {
+    "id": "7",
+    "image": "/animales_3.jpeg",
+    "name": "Elephant",
+    "dimensions": "30 x 45cm",
+    "price": 20,
+    "btn": "https://www.youtube.com/watch?v=023Psne_-_4"
+  },
+  {
+    "id": "8",
+    "image": "/animales_5.jpeg",
+    "name": "Lagarto",
+    "dimensions": "30 x 45cm",
+    "price": 20,
+    "btn": "https://www.youtube.com/watch?v=023Psne_-_4"
+  },
+  {
+    "id": "9",
+    "image": "/symmetry_1.jpeg",
+    "name": "Escher inspo",
+    "dimensions": "30 x 45cm",
+    "price": 20,
+    "btn": "https://www.youtube.com/watch?v=023Psne_-_4"
+  },
+  {
+    "id": "10",
+    "image": "/animales_2.jpeg",
+    "name": "Another elephant",
+    "dimensions": "30 x 45cm",
+    "price": 20,
+    "btn": "https://www.youtube.com/watch?v=023Psne_-_4"
+  },
+  {
+    "id": "11",
+    "image": "/fruta_17.jpeg",
+    "name": "This is a pear",
+    "dimensions": "30 x 45cm",
+    "price": 20,
+    "btn": "https://www.youtube.com/watch?v=023Psne_-_4"
+  },
+  {
+    "id": "12",
+    "image": "/fruta_14.jpeg",
+    "name": "Another pear",
+    "dimensions": "30 x 45cm",
+    "price": 20,
+    "btn": "https://www.youtube.com/watch?v=023Psne_-_4"
+  },
+  {
+    "id": "13",
+    "image": "/fruta_6.jpeg",
+    "name": "One more apple",
+    "dimensions": "30 x 45cm",
+    "price": 20,
+    "btn": "https://www.youtube.com/watch?v=023Psne_-_4"
+  },
+  {
+    "id": "14",
+    "image": "/fruta_1.jpeg",
+    "name": "More apples on the horizon",
+    "dimensions": "30 x 45cm",
+    "price": 20,
+    "btn": "https://www.youtube.com/watch?v=023Psne_-_4"
+  },
+  {
+    "id": "15",
+    "image": "/fruta_13.jpeg",
+    "name": "One more pear",
+    "dimensions": "30 x 45cm",
+    "price": 20,
+    "btn": "https://www.youtube.com/watch?v=023Psne_-_4"
+  },
+  {
+    "id": "16",
+    "image": "/animales_14.jpeg",
+    "name": "Peixe",
+    "dimensions": "30 x 45cm",
+    "price": 20,
+    "btn": "https://www.youtube.com/watch?v=023Psne_-_4"
+  },
+  {
+    "id": "17",
+    "image": "/fruta_120.jpeg",
+    "name": "Apple n°10",
+    "dimensions": "30 x 45cm",
+    "price": 20,
+    "btn": "https://www.youtube.com/watch?v=023Psne_-_4"
+  },
+  {
+    "id": "18",
+    "image": "/symmetry_2.jpeg",
+    "name": "Another Escher",
+    "dimensions": "30 x 45cm",
+    "price": 20,
+    "btn": "https://www.youtube.com/watch?v=023Psne_-_4"
+  },
+  {
+    "id": "19",
+    "image": "/symmetry_4.jpeg",
+    "name": "Escher deconstructed",
+    "dimensions": "30 x 45cm",
+    "price": 20,
+    "btn": "https://www.youtube.com/watch?v=023Psne_-_4"
+  }
+]

@@ -1,103 +1,74 @@
 "use strict";
-
 /*-------------- IMPORT STATEMENTS ----------*/
 /* import { languages } from "./modules/lang.js"; */
 
 window.addEventListener("DOMContentLoaded", init);
 
+/*------- INITIALIZATION ------*/
 function init() {
   const urlParams = new URLSearchParams(window.location.search);
-  const id = urlParams.get("id");
-  const category = urlParams.get("category");
 
-  if (category) {
-    getCategoryGallery(category);
-  } else if (id) {
-    makeModalWithImage();
+  //wood gallery
+  if (window.location.href.includes("wood")) {
+    fetchJson();
   }
-
-  //show about only when on index.html
-  /* if (window.location.href.includes("index")) {
-    getAbout();
-  } */
-  //show gallery only when on wood.html
-  /* else if (window.location.href.includes("wood")) {
-    getGallery();
-  } */
-
-  /* getContact();
-  getCategories(); */
+  //glass gallery
+  if (window.location.href.includes("glass")) {
+    fetchJson2();
+  }
 }
 
-// /*--------- ABOUT PAGE --------*/
-// function getAbout() {
-//   /* fetch("https://mauriciolondono.be/wp/about-page/the-person-behind-the-art/")
-//     .then((res) => res.json())
-//     .then(showAbout); */
+/*--------- WOOD GALLERY --------*/
+function fetchJson() {
+  fetch("products.json")
+    .then((res) => res.json())
+    .then(getWoodGallery);
+}
+function getWoodGallery(product) {
+  product.forEach(showWoodGallery);
+}
+/*--- display wood products ---*/
+function showWoodGallery(product) {
+  const woodTemplate = document.querySelector("#woodGalleryTemplate").content;
+  const woodTemplateCopy = woodTemplate.cloneNode(true);
+  const woodList = document.querySelector("#woodList");
 
-//   let response = fetch(
-//     "https://mauriciolondono.be/wp/wp-json/wp/v2/types/page?_embed",
-//     {
-//       method: "GET",
-//       headers: {
-//         "Content-Type": "application/json;charset=utf-8",
-//       },
-//       body: showAbout(),
-//     }
-//   );
-// }
+  woodTemplateCopy.querySelector(".img").src = `imgs/${product.image}`;
+  woodTemplateCopy.querySelector("h2.name").textContent = product.name;
+  woodTemplateCopy.querySelector("p.dimensions").textContent =
+    product.dimensions;
+  woodTemplateCopy.querySelector("h3.price").textContent = `${product.price}€`;
+  woodTemplateCopy.querySelector(".btn").textContent = `Buy Now`;
 
-// function showAbout(about) {
-//   //clone template
-//   /* const templateA = document.querySelector(".aboutTemplate").content; */
-// }
-
-/*--------- CONTACT PAGE --------*/
-
-/*------------ GALLERY ----------*/
-/* function getGallery() {
-  let response2 = fetch(
-    "https://mauriciolondono.be/wp/wp-json/wp/v2/categories?_embed",
-    {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: showGallery(),
-    }
-  );
+  woodList.appendChild(woodTemplateCopy);
 }
 
-function showGallery(jsonObj) {
-  //store destination of template copies
-  const dest = document.getElementById("galleryPage");
-  //create a loop through each json object from the link
-  jsonObj.forEach((e) => {
-    //store img info in variable
-    const imgPath = e._embedded;
-    ["wp:featuredmedia"][0].media_details.sizes.medium.source.url;
-    //store template in variable
-    const galleryTemplate = document.querySelector("#galleryTemplate")
-      .textContent;
-    //clone template
-    const galleryCopy = galleryTemplate.cloneNode(true);
-    //store anchor object/a-tag around the img
-    const anchor = galleryCopy.querySelector(a);
-    //store img
-    const imgGallery = galleryCopy.querySelector("a .img_Gallery");
-    //set the src-attribute
-    imgGallery.setAttribute("src", imgPath);
-    //set the id-attribute
-    imgGallery.setAttribute("id", e.id);
-    //append everything to chosen destination
-    dest.appendChild(galleryCopy);
-    //create a click event attached to the anchor tag around the image tag
-    anchor.addEventListener("click", (e) => {
-      e.preventDefault();
-      manageModal(e);
-    });
-  });
-} */
+/*--------- GLASS GALLERY --------*/
+function fetchJson2() {
+  fetch("productsGlass.json")
+    .then((res) => res.json())
+    .then(getGlassGallery);
+}
+function getGlassGallery(product2) {
+  product2.forEach(showGlassGallery);
+}
+/*--- display glass products ---*/
+function showGlassGallery(product2) {
+  const glassTemplate = document.querySelector("#glassGalleryTemplate").content;
+  const glassTemplateCopy = glassTemplate.cloneNode(true);
+  const glassList = document.querySelector("#glassList");
+
+  glassTemplateCopy.querySelector(".img").src = `imgs/${product2.image}`;
+  glassTemplateCopy.querySelector("h2.name").textContent = product2.name;
+  glassTemplateCopy.querySelector("p.dimensions").textContent =
+    product2.dimensions;
+  glassTemplateCopy.querySelector(
+    "h3.price"
+  ).textContent = `${product2.price}€`;
+  glassTemplateCopy.querySelector(".btn").textContent = `Buy Now`;
+
+  glassList.appendChild(glassTemplateCopy);
+}
 
 /*------------ LANGUAGE SWITCHER ----------*/
 const langEl = document.querySelector(".langWrap");
