@@ -89,7 +89,7 @@ const glassSub = document.querySelector("#glass .glassSub");
 const glassDesc = document.querySelector("#glass .glassDesc");
 const glassBtn = document.querySelector("#glass #glassBtn");
 //button
-const btn = document.querySelector(".btn");
+const buyBtn = document.querySelector("#woodProduct .btn");
 //footer
 const copyright = document.querySelector(".copyright");
 const email = document.querySelector(".email");
@@ -100,27 +100,36 @@ langLink.forEach((el) => {
     langEl.querySelector(".active").classList.remove("active");
     el.classList.add("active");
     const attr = el.getAttribute("language");
+
     //nav links
     homeLink.textContent = languages[attr].homeLink;
     woodLink.textContent = languages[attr].woodLink;
     glassLink.textContent = languages[attr].glassLink;
-    //profile section
-    profileTitle.textContent = languages[attr].profileTitle;
-    profileDesc.textContent = languages[attr].profileDesc;
-    //wood
-    woodSub.textContent = languages[attr].woodSub;
-    woodDesc.textContent = languages[attr].woodDesc;
-    woodBtn.textContent = languages[attr].woodBtn;
-    //glass
-    glassSub.textContent = languages[attr].glassSub;
-    glassDesc.textContent = languages[attr].glassDesc;
-    glassBtn.textContent = languages[attr].glassBtn;
-    //button
-    if (window.location.href.includes("wood")) {
-      btn.textContent = languages[attr].btn;
+
+    if (window.location.href.includes("index")) {
+      //nav links
+      homeLink.textContent = languages[attr].homeLink;
+      woodLink.textContent = languages[attr].woodLink;
+      glassLink.textContent = languages[attr].glassLink;
+      //profile section
+      profileTitle.textContent = languages[attr].profileTitle;
+      profileDesc.textContent = languages[attr].profileDesc;
+      //wood
+      woodSub.textContent = languages[attr].woodSub;
+      woodDesc.textContent = languages[attr].woodDesc;
+      woodBtn.textContent = languages[attr].woodBtn;
+      //glass
+      glassSub.textContent = languages[attr].glassSub;
+      glassDesc.textContent = languages[attr].glassDesc;
+      glassBtn.textContent = languages[attr].glassBtn;
+    } else if (window.location.href.includes("wood")) {
+      //buy btn
+      buyBtn.textContent = languages[attr].buyBtn;
     } else if (window.location.href.includes("glass")) {
+      //buy btn
       btn.textContent = languages[attr].btn;
     }
+
     //footer
     copyright.textContent = languages[attr].copyright;
     email.textContent = languages[attr].email;
@@ -141,7 +150,7 @@ let languages = {
     glassSub: "Glass sculptures",
     glassDesc: "Description about glass work etc.",
     glassBtn: "Read More",
-    btn: "Buy Now",
+    buyBtn: "Buy Now",
     copyright: "All rights reserved to Mauricio Londoño © 2020",
     email: "Email Me!",
   },
@@ -158,7 +167,7 @@ let languages = {
     glassSub: "Esculturas en vidrio",
     glassDesc: "Descripción sobre arte en vidrio etc.",
     glassBtn: "Leer Más",
-    btn: "Comprar",
+    buyBtn: "Comprar",
     copyright: "Todos los derechos reservados a Mauricio Londoño © 2020",
     email: "Cóntactame!",
   },
@@ -175,7 +184,7 @@ let languages = {
     glassSub: "Sculptures en verre",
     glassDesc: "Description sur le travail en verre etc.",
     glassBtn: "Lire plus",
-    btn: "Acheter",
+    buyBtn: "Acheter",
     copyright: "Tous droits réservés à Mauricio Londoño © 2020",
     email: "Contactez-moi!",
   },
