@@ -84,6 +84,21 @@
   margin-right: 20px;
 }
 
+/*------------ SHOPPING CART -----------*/
+.cart-btn {
+  position: relative;
+  cursor: pointer;
+}
+.cart-items {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: black;
+  padding: 0 5px;
+  border-radius: 30%;
+  color: white;
+}
+
 /*----------- PROFILE SECTION ----------*/
 /* profile */
 #profile {
@@ -155,6 +170,7 @@
   padding: 15px 45px;
   font-size: 14px;
   font-family: var(--simple-font);
+  cursor: pointer;
 }
 #wood .readMoreBtn {
   grid-area: woodBtn;
@@ -206,6 +222,7 @@
   padding: 15px 45px;
   font-size: 14px;
   font-family: var(--simple-font);
+  cursor: pointer;
 }
 #glass .readMoreBtn {
   grid-area: glassBtn;
